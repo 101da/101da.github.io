@@ -14,10 +14,11 @@ if (hour <= 11) {
   Weekdays[day] + ".";
 } else if (hour <= 23) {
   greeting = "Noch einen schönen Restabend wünschen wir Ihnen am " + Weekdays[day] + ".";
-} else if ((day = 0 || day = 6) && (hour <= 19)) {
+} else if ((day == 0 || day == 6) && (hour <= 19)) {
   greeting = "Wir wünschen Ihnen ein entspanntes Wochenende und noch einen schönen " +
   Weekdays[day] + ".";
-} else {
+  }
+ else {
   greeting = "Wir wünschen Ihnen einen schönen Tag.";
 }
 
