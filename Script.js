@@ -23,10 +23,13 @@ if (hour <= 11) {
 }
 
 //document.getElementById("demo").innerHTML = Weekdays[day];
-var changeHtml = document.getElementById("demo");
+var changeHtml = document.getElementById("welcomemessage");
 changeHtml.innerHTML = greeting;
 changeHtml.style.color = "red";
 changeHtml.style.fontFamily = "Arial";
+changeHtml.style.position = "relative";
+changeHtml.style.textAlign = "center";
+changeHtml.style.top = "15em";
 
 
 //document.getElementById("demo").innerHTML = d.getDay();
