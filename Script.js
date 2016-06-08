@@ -26,10 +26,22 @@ if (hour <= 11) {
 var changeHtml = document.getElementById("welcomemessage");
 changeHtml.innerHTML = greeting;
 changeHtml.style.color = "red";
-changeHtml.style.fontFamily = "Arial";
+changeHtml.style.fontFamily = "Open Sans";
+changeHtml.style.weight = "300";
 changeHtml.style.position = "relative";
 changeHtml.style.textAlign = "center";
-changeHtml.style.top = "15em";
+changeHtml.style.top = "50%";
+//changeHtml.style.marginTop: "5em";
+//changeHtml.style.marginBottom: "5em";
+//changeHtml.style.fontSize = "100%";
 
 
 //document.getElementById("demo").innerHTML = d.getDay();
+
+var device = screen.availWidth;
+//window.onload als Variable ansprechen - DOM-Zugriffe möglichst vermeiden!
+
+if (window.onload && device <= 768) {
+document.getElementById("IdWelcome").innerHTML = "<=768";
+}
+else {};
