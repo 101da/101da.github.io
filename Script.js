@@ -38,10 +38,6 @@ changeHtml.style.top = "50%";
 
 //document.getElementById("demo").innerHTML = d.getDay();
 
-var device = screen.availWidth;
+//var device = screen.innerWidth;
 //window.onload als Variable ansprechen - DOM-Zugriffe möglichst vermeiden!
-
-if (window.onload && device <= 768) {
-document.getElementById("IdWelcome").innerHTML = "<=768";
-}
-else {};
+//window.onload(document.getElementById("IdWelcome").innerHTML = "test";)
