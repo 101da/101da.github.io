@@ -1,3 +1,5 @@
+window.onload = function(){document.getElementById("loadingCover").style.display = "none"}
+
 var d = new Date();
 var day = d.getDay();
 var hour = d.getHours();
@@ -28,6 +30,7 @@ changeHtml.innerHTML = greeting;
 changeHtml.style.color = "red";
 changeHtml.style.fontFamily = "Open Sans";
 changeHtml.style.weight = "300";
+
 //changeHtml.style.position = "relative";  <<PROBLEM MIT DEM POSITIONIEREN KÖNNTE AUCH HIER LIEGEN!
 //changeHtml.style.textAlign = "center";
 //changeHtml.style.top = "50%";
