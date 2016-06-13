@@ -1,4 +1,4 @@
-window.onload = function(){document.getElementById("loadingCover").style.display = "none"}
+window.onload = function(){document.getElementById("loadingCover").remove("loadingCover")}
 
 var d = new Date();
 var day = d.getDay();
