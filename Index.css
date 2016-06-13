@@ -9,6 +9,10 @@ height: 100%;
 }*/
 .Willkommen {
 	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	top: 0px;
 	z-index: 100;
   font-family: "Open Sans";
 	font-weight: 400;
