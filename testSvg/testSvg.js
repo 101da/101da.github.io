@@ -1,8 +1,16 @@
-var positionSVG = {width: window.innerWidth, height: window.innerHeight};
+var positionSVG = {width: window.innerWidth - (window.innerWidth/40), height: window.innerHeight/2};
 var positionObjects = {width: positionSVG.width/2, height:positionSVG.height/2};
 
 var s = Snap(positionSVG.width, positionSVG.height);
-var bigCircle = s.circle(positionObjects.width*(1/4), 150, 100);
+var circle = s.circle(positionObjects.width, positionObjects.height, positionObjects.width/6)
+
+/*function positionWindow() {
+  svg = document.getElementById("svg");
+  body.style.height = positionSVG.height + "px";
+};*/
+
+/*var s = Snap(800,600);
+var bigCircle = s.circle(150, 150, 100);
 bigCircle.attr({
   fill: "#bada55",
   stroke: "#000",
@@ -29,10 +37,12 @@ bigCircle.attr({
 });
 /*discs.attr({
   fill: Snap("test.svg")
-});*/
+});
 discs.attr({fill: "r()#fff-#000"});
 discs.attr({fill: "R(150, 150, 100)#fff-#000"});
-p.select("path").animate({stroke: "#f00"}, 1000);
+p.select("path").animate({stroke: "#f00"}, 1000);*/
+
+
 
 /*var s = Snap(1000, 800);
 // Circle with 80px radius
