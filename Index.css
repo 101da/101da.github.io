@@ -7,7 +7,7 @@ text-align: center;
 width: 100%;
 height: 100%;
 }*/
-#backgroundImage {
+.loadingCover {
 	background-color: red;
 	width: 100px;
 	height: 100px;
