@@ -27,7 +27,7 @@ if (hour <= 11) {
 //document.getElementById("demo").innerHTML = Weekdays[day];
 var changeHtml = document.getElementById("welcomemessage");
 changeHtml.innerHTML = greeting;
-changeHtml.style.color = "red";
+changeHtml.style.color = "black ";
 changeHtml.style.fontFamily = "Open Sans";
 changeHtml.style.weight = "300";
 
