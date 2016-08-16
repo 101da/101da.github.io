@@ -1,4 +1,4 @@
-window.onload = function(){document.getElementById("loadingCover").remove("loadingCover")}
+//window.onload = function(){document.getElementById("loadingCover").remove("loadingCover")}
 
 var d = new Date();
 var day = d.getDay();
@@ -27,9 +27,9 @@ if (hour <= 11) {
 //document.getElementById("demo").innerHTML = Weekdays[day];
 var changeHtml = document.getElementById("welcomemessage");
 changeHtml.innerHTML = greeting;
-changeHtml.style.color = "black ";
+/*changeHtml.style.color = "black ";
 changeHtml.style.fontFamily = "Open Sans";
-changeHtml.style.weight = "300";
+changeHtml.style.weight = "300";*/
 
 //changeHtml.style.position = "relative";  <<PROBLEM MIT DEM POSITIONIEREN KÖNNTE AUCH HIER LIEGEN!
 //changeHtml.style.textAlign = "center";
