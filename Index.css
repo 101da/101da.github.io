@@ -1,36 +1,51 @@
 body {
 	color: black;
-	position: fixed;
+	position: absolute;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
 	top: 0px;
 	z-index: 100;
   font-family: "Open Sans";
-	font-weight: 400;
+	font-weight: 300;
   text-align: center;
 	font-size: 1.5em;
 }
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.Links {
-	position: relative;
-	margin: 2px 2px 2px 2px;
-	text-align: right;
-}
-.Links #Start {
-	position: fixed;
-	bottom: 0.5em;
-	right: 0.5em;
-}
+/*.Willkommen:nth-child(1n+0) {
+	padding: 5px 5px 5px 5px;
+}*/
 #welcomemessage {
 	color: inherit;
 	font-family: "Open Sans";
 	font-weight: 400;
 }
+/*SCHLECHT POSITIONIERT - ABER BESSER ALS GAR NICHT!*/ .Links {
+	text-align: center;
+  margin-top: 25%;
+}
+.Links a {
+	text-decoration: none;
+	color: black; /*#4d4d4d*/
+	border-color: #f2f2f2;
+	background-color: #DA904C;
+	border-style: solid;
+	margin: 10px;
+	border-width: 2px;
+	border-radius: 25px;
+	padding: 5px 20px 5px 20px;
+	cursor: crosshair;
+}
+.Links a:hover {
+	color: white;
+	border-color: black;
+	background-color: #AA703B;
+}
+/*>>zur Darstellung am unteren Rand rechts. .Links #Start {
+	position: relative;
+	text-align: center;
+	bottom: 0.5em;
+	right: 0.5em;
+}*/
 #backgroundImage {
 	background-image: url("unsplash_by_Will_van_Wingerden.jpg");
 	position: fixed;
