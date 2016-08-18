@@ -1,0 +1,16 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+#close-button {
+  position: fixed;
+	z-index: 1000;
+	margin: 1em;
+	padding: 0;
+	width: 2.5em;
+	height: 2.25em;
+	border: none;
+	text-indent: 2.5em;
+	font-size: 1.5em;
+	color: black;
+	background: transparent;
+} /*erstmal nur kopiert*/
