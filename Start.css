@@ -1,16 +1,73 @@
 *, *::after, *::before {
   box-sizing: border-box;
 }
-#close-button {
+html,
+body,
+.container,
+.content-wrap {
+	overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+	width: 100%;
+	height: 100%;
+  margin: 0px;
+}
+.list {
+  height: 100%;
+  width: 0em;
   position: fixed;
-	z-index: 1000;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 5em;
+  transition: 0.5s
+}
+.list a {
+  color: white;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  text-decoration-style: solid;
+  font-family: sans-serif; Arial;
+  padding: 0.5em;
+  padding-left: 1.5em;
+  transiton: .3s
+}
+.list a:hover {
+  opacity: 0.5
+
+}
+.list a span {
+  margin-left: 1em
+}
+#close-button {
+  position: absolute;
+	z-index: 100;
 	margin: 1em;
 	padding: 0;
-	width: 2.5em;
-	height: 2.25em;
 	border: none;
-	text-indent: 2.5em;
 	font-size: 1.5em;
-	color: black;
+	color: red;
 	background: transparent;
-} /*erstmal nur kopiert*/
+  top: 0.0625em;
+  left: 7em;
+  cursor: pointer;
+}
+#close-button:hover {
+  opacity: 0.5;
+}
+#open-button {
+	margin: 1em;
+	padding: 0;
+	border: none;
+	font-size: 1.5em;
+	color: red;
+	background: transparent;
+  cursor: pointer;
+}
+#open-button:hover {
+  opacity: 0.5;
+}

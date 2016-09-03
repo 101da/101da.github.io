@@ -8,11 +8,13 @@
 </head>
 </html>
 <body>
-  <div class="menu">
-    <div class="list">
-     <a href="#"><i class="fa fa-fw fa-bar-chart"</i><span></span></a>
-     <a href="#"><i class="fa fa-fw fa-bar-chart"</i><span></span></a>
-    </div><!--list-->
-     <button class="close-button" id="close-button"><i class="fa fa-bars"></i></button>
-  </div><!--menu-->
+<button id="open-button" class="fa fa-fw fa-bars" onclick="openNav()"></button>
+<div id="list" class="list">
+ <a href="#"><i class="fa fa-fw fa-home"></i><span>test</span></a>
+ <a href="#"><i class="fa fa-fw fa-home"></i><span>test</span></a>
+
+ <button id="close-button" class="fa fa-fw fa-times" onclick="closeNav()" href="javascript:void(0)"></button>
+</div><!--list-->
+<script src="Start.js"></script>
 </body>
+</html>
