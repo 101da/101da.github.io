@@ -2,7 +2,7 @@ function visible() {document.getElementById('list-elements').style.display = 'in
 
 function openNav() {
     document.getElementById("list").style.width = "15em";
-    setTimeout(visible, 150);
+    setTimeout(visible, 300);
 }
 function closeNav() {
     document.getElementById("list").style.width = "0em";
