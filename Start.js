@@ -12,5 +12,5 @@ var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 console.log("Displaybreite: " + windowWidth);
 console.log("Displayhoehe: " + windowHeight);
-document.getElementById('headerImage').style.height = windowHeight + "px";
-document.getElementById('article').style.marginTop = windowHeight + "px";
+//document.getElementById('headerImage').style.height = windowHeight + "px";
+//document.getElementById('article').style.marginTop = windowHeight + "px";
