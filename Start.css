@@ -76,8 +76,8 @@ body,
   opacity: 0.5;
 }
 #headerImage {
-  /*>>>>background-image: url("unsplash_by_Will_van_Wingerden.jpg");*/
   background-color: blue;
+  background-image: url("unsplash_by_Will_van_Wingerden.jpg");
 	/*position: fixed;
 	width: 100%;
 	height: 0;
