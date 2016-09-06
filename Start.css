@@ -154,6 +154,7 @@ footer a:hover {
 }
 @media screen and (max-width: 425px) {
   .title {left: 40%}
+  .article {margin: 0em 2em 0em 2em}
 }
 @media screen and (min-width: 375px) and (max-width: 425px){
   .title {left: 45%}
