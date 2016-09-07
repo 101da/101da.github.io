@@ -21,14 +21,14 @@ console.log("Displayhoehe: " + windowHeight);
 
 
 //dayNnight
-var d = new Date();
-var hour =d.getHours();
+/*var d = new Date();
+var hour = d.getHours();
 var bodyId = document.getElementById('body');
 //var aId = document.getElementsByName('a');
 
 //the a-element wont turn white yet.
-if (hour => 20) && (hour <= 00) {
+if ((hour => 20) && (hour <= 24)) {
   bodyId.style.color = "white";
   bodyId.style.backgroundColor = "black";
 //  aId.style.color = "white";
-} else {}
+} else {}*/
