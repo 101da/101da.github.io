@@ -27,7 +27,7 @@ var bodyId = document.getElementById('body');
 //var aId = document.getElementsByName('a');
 
 //the a-element wont turn white yet.
-if (hour => 20) {
+if (hour => 20) && (hour <= 00) {
   bodyId.style.color = "white";
   bodyId.style.backgroundColor = "black";
 //  aId.style.color = "white";
