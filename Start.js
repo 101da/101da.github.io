@@ -24,11 +24,11 @@ console.log("Displayhoehe: " + windowHeight);
 var d = new Date();
 var hour =d.getHours();
 var bodyId = document.getElementById('body');
-var aId = document.getElementsByName('a');
+//var aId = document.getElementsByName('a');
 
 //the a-element wont turn white yet.
 if (hour => 20) {
   bodyId.style.color = "white";
   bodyId.style.backgroundColor = "black";
-  aId.style.color = "white";
+//  aId.style.color = "white";
 } else {}
