@@ -1,4 +1,4 @@
-window.onload = function(){document.getElementById("loadingCover").remove("loadingCover")}
+//window.onload = function(){document.getElementById("loadingCover").remove("loadingCover")}
 
 var d = new Date();
 var day = d.getDay();
@@ -26,3 +26,19 @@ if (hour <= 11) {
 
 var changeWelcomeHtml = document.getElementById("welcomemessage");
 changeWelcomeHtml.innerHTML = greeting;
+/*changeHtml.style.color = "black ";
+changeHtml.style.fontFamily = "Open Sans";
+changeHtml.style.weight = "300";*/
+
+//changeHtml.style.position = "relative";  <<PROBLEM MIT DEM POSITIONIEREN KÖNNTE AUCH HIER LIEGEN!
+//changeHtml.style.textAlign = "center";
+//changeHtml.style.top = "50%";
+
+//changeHtml.style.marginTop: "5em";
+//changeHtml.style.marginBottom: "5em";
+//changeHtml.style.fontSize = "100%";
+
+//>>var LinksHeight = window.innerHeight;
+//>>console.log("Displayhoehe: " + LinksHeight);
+//>>document.getElementById("Links").style.marginTop = (LinksHeight/2)+"px";
+//(LinksHeight/2)
