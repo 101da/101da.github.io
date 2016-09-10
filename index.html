@@ -20,6 +20,15 @@
    top: 25%;
    z-index: 10000
   }
+  #loadingCover {
+    width: 100%;
+    height: 100%;
+    background-color: #175C91;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    font-size: 1.5em
+  }
   body {
    color: black;
    position: absolute;
@@ -42,13 +51,11 @@
    font-family: "Open Sans", sans-serif;
    font-weight: 400;
   }
-  /*SCHLECHT POSITIONIERT - ABER BESSER ALS GAR NICHT!*/ .Links {
-   text-align: center;
-  } /*margin-top: 25%;*/
   .Links {
    position: absolute;
    left: 48%;
     top: 50%;
+    text-align: center;
   }
   .Links a {
    text-decoration: none;
@@ -70,12 +77,6 @@
   .Links a:visited {
    color: white;
   }
-  /*>>zur Darstellung am unteren Rand rechts. .Links #Start {
-   position: relative;
-   text-align: center;
-   bottom: 0.5em;
-   right: 0.5em;
-  }*/
   #backgroundImage {
    background-image: url("unsplash_by_Will_van_Wingerden.jpg");
    position: fixed;
@@ -93,11 +94,15 @@
   @media screen and (min-width: 375px) and (max-width: 425px){
     .Links {left: 45%}
   }
-
   </style>
+<link rel="stylesheet" type="text/css" href="font-awesome-4.6.3\css\font-awesome.min.css"/>
 </head>
 <body>
   <noscript><h1>Bitte aktivieren Sie Javascript, sonst kann sich die Navigationsleiste nicht ausfahren.</h1></noscript>
+  <div id=loadingCover>
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+  </div>
   <div id="backgroundImage"></div>
   <div class="Willkommen">
     <p>Willkommen</p>
