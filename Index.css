@@ -24,6 +24,11 @@ noscript h1 {
 /*SCHLECHT POSITIONIERT - ABER BESSER ALS GAR NICHT!*/ .Links {
 	text-align: center;
 } /*margin-top: 25%;*/
+.Links {
+	position: absolute;
+	left: 50%;
+	top: 50%
+}
 .Links a {
 	text-decoration: none;
 	color: white; /*#4d4d4d*/
@@ -34,7 +39,7 @@ noscript h1 {
 	border-width: 2px;
 	border-radius: 25px;
 	padding: 5px 20px 5px 20px;
-	cursor: crosshair;
+	cursor: pointer;
 }
 .Links a:hover {
 	color: white;

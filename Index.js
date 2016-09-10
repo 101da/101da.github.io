@@ -24,7 +24,6 @@ if (hour <= 11) {
   greeting = "Wir wünschen Ihnen einen schönen Tag.";
 }
 
-//document.getElementById("demo").innerHTML = Weekdays[day];
 var changeWelcomeHtml = document.getElementById("welcomemessage");
 changeWelcomeHtml.innerHTML = greeting;
 /*changeHtml.style.color = "black ";
@@ -38,7 +37,8 @@ changeHtml.style.weight = "300";*/
 //changeHtml.style.marginTop: "5em";
 //changeHtml.style.marginBottom: "5em";
 //changeHtml.style.fontSize = "100%";
-var LinksHeight = window.innerHeight;
-console.log("Displayhoehe: " + LinksHeight);
-document.getElementById("Links").style.marginTop = (LinksHeight/2)+"px";
+
+//>>var LinksHeight = window.innerHeight;
+//>>console.log("Displayhoehe: " + LinksHeight);
+//>>document.getElementById("Links").style.marginTop = (LinksHeight/2)+"px";
 //(LinksHeight/2)
