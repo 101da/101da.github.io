@@ -198,5 +198,5 @@ footer a:hover {
 }*/
 @media screen and (max-width: 425px) {
   .article {margin: 0em 2em 0em 2em}
-  #headerImage {background-attachment: scroll; background-size: auto auto}
+  #headerImage {background-attachment: scroll; background-size: 5em 5em}
 }
