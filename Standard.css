@@ -7,6 +7,18 @@ body {
 	height: 100%;
   margin: 0px;
 }
+h1::selection {
+  background: #FA4800;
+}
+h1::-moz-selection {
+  background: #FA4800;
+}
+p::selection {
+  background: #FA4800;
+}
+p::-moz-selection {
+  background: #FA4800;
+}
 noscript h1 {
 	text-align: center;
 	color: black;
