@@ -1,0 +1,11 @@
+section {
+  margin: 0em 5em;
+}
+.text {
+  text-align: justify;
+  hyphens: auto;
+}
+p::-moz-selection {
+  background: grey;
+  color: white;
+}

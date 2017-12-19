@@ -5,11 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>101da.github</title>
   <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  body, body a, body h1, body p {
+    text-align: center;
+    font-family: "Open Sans", Arial;
+    font-weight: 300;
+    color: black;
+    font-size: 1.5em;
+  }
+  body a {
+    color: inherit;
+    text-decoration: none;
+  }
   noscript h1 {
    text-align: center;
    color: black;
-   font-family: 'Roboto Condensed', sans-serif;
-   font-size: 1em;
+   font-family: 'Roboto Condensed', sans-serif, Arial;
+   font-size: 1.5em;
    background-color: red;
    padding: 1.5em;
    border-width: 0.25em;
@@ -20,78 +35,70 @@
    top: 25%;
    z-index: 10000
   }
-  body {
-   color: black;
-   position: absolute;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   top: 0px;
-   z-index: 100;
-   font-family: "Open Sans", sans-serif;;
-   font-weight: 300;
-   text-align: center;
-   font-size: 1.5em;
-   margin: 0px;
-  }
-  #welcomemessage {
-   color: inherit;
-   font-family: "Open Sans", sans-serif;
-   font-weight: 400;
-  }
-  .Links {
-    position: absolute;
-    top: calc(50% - 5em/2); /* height divided by 2*/
-    left: calc(50% - 5em/2); /* width divided by 2*/
-    text-align: center;
-  }
-  .Links a {
-   text-decoration: none;
-   color: white; /*#4d4d4d*/
-   border-color: #f2f2f2;
-   background-color: #DA904C;
-   border-style: solid;
-   margin: 10px;
-   border-width: 2px;
-   border-radius: 25px;
-   padding: 5px 20px 5px 20px;
-   cursor: pointer;
-  }
-  .Links a:hover {
-   color: white;
-   border-color: white;
-   background-color: #AA703B;
-  }
-  .Links a:visited {
-   color: white;
-  }
   #backgroundImage {
    background-image: url("unsplash_by_Will_van_Wingerden.jpg");
-   position: fixed;
-   background-size: cover;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-position: center;
-   z-index: -5;
-   width: 100%;
-   height: 100%
+   /* Full height */
+    height: 90%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navigationbar {
+    height: 10%;
+    margin: 0 0 1% 0;
+    padding: 0;
+    border-bottom-color: #a1a1a1;
+    border-width: 0 0 0.1em 0;
+    border-style: solid;
+    text-align: center;
+    font-size: 1em;
+
+
+    /*border-color: black;
+    border-width: 0.1em;
+    border-style: dotted;*/
+
+  }
+  .e-navbar {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    margin: 0.5em;
+  }
+  .e-navbar:hover {
+    /*opacity: 0.8;*/
+    border-radius: 0.5em;
+    border-width: 0.25em;
+    border-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(245, 0, 0, 0.5);
+  }
+  .e-navbar a {
+    /*line-height: 2.5em;*/
   }
   </style>
 </head>
 <body>
   <noscript><h1>Bitte aktivieren Sie Javascript, sonst kann sich die Navigationsleiste nicht ausfahren.</h1></noscript>
   <div id="backgroundImage"></div>
-  <div class="Willkommen">
-    <p>Willkommen</p>
-    <p id="welcomemessage">
-      something
-    </p>
-  </div>
-  <div id="Links" class="Links">
-    <a href="Start.html" title="Start">Start</a>
-  </div>
-  <!--<div id="loadingCover"></div>-->
- <!--<script src="Index.js"></script>-->
+  <ul class="navigationbar">
+    <li class="e-navbar"><a href="#" title="xxx">Text1</a></li>
+    <li class="e-navbar"><a href="#" title="xxx">Text2</a></li>
+    <li class="e-navbar"><a href="#" title="xxx">Text3</a></li>
+  </ul>
+  <main>
+    <section class="text">
+      <h1>important</h1>
+      <p>An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud. I have a 10 year old son. He has words. He is so good with these words it's unbelievable. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?!I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? My placeholder text, I think, is going to end up being very good with women. I’m the best thing that ever happened to placeholder text. That other text? Sadly, it’s no longer a 10. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. An 'extremely credible source' has called my office and told me that Lorem Ipsum's birth certificate is a fraud. I’m the best thing that ever happened to placeholder text. Despite the constant negative ipsum covfefe. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. Despite the constant negative ipsum covfefe. You’re disgusting. I’m the best thing that ever happened to placeholder text. Lorem Ipsum's father was with Lee Harvey Oswald prior to Oswald's being, you know, shot. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. I think my strongest asset maybe by far is my temperament. I have a placeholding temperament. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. When other websites give you text, they’re not sending the best. They’re not sending you, they’re sending words that have lots of problems and they’re bringing those problems with us. They’re bringing mistakes. They’re bringing misspellings. They’re typists… And some, I assume, are good words. It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again. I think the only difference between me and the other placeholder text is that I’m more honest and my words are more beautiful. Look at these words. Are they small words? And he referred to my words - if they're small, something else must be small. I guarantee you there's no problem, I guarantee.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <a href="#" title="test"><span>Test</span></a>
+    <a href="#" title="test2"><span>Test2</span></a>
+  </footer>
 </body>
 </html>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto+Condensed" rel="stylesheet">
