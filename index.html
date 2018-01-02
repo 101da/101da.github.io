@@ -11,7 +11,7 @@
   }
   body, body a, body h1, body p {
     text-align: center;
-    font-family: "Open Sans", Arial;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: 300;
     color: black;
     font-size: 1.5em;
@@ -23,7 +23,7 @@
   noscript h1 {
    text-align: center;
    color: black;
-   font-family: 'Roboto Condensed', sans-serif, Arial;
+   font-family: "Roboto Condensed", Arial, sans-serif;
    font-size: 1.5em;
    background-color: red;
    padding: 1.5em;
@@ -46,53 +46,62 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .navigationbar {
-    height: 5em;
-    width: 100%;
-    position: fixed;
-    padding: 0.8em 0em 0em 0em;
+  #backgroundImage h1 {
     margin: 0;
-    border-top-color: #CBCBCB;
-    border-width: 0.08em 0em 0em 0em;
+    padding: 35vh 0 0 0;
+    
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  .navigationbar {
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    border-top-color: #d62700;
+    border-bottom-color: #d62700;
+    border-width: 0.1em 0em 0.1em 0em;
     border-style: solid;
-    text-align: center;
-    font-size: 1em;
-    background-color: white;
-    opacity: 0.95;
+    background-color: #ff2f00;
 
-
-    /*border-color: black;
-    border-width: 0.1em;
-    border-style: dotted;*/
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .navigationbar a {
+    font-size: 1.25em;
   }
   .e-navbar {
-    position: relative;
-    display: inline-block;
-    padding: 0em 0.5em;
-    margin: 0em;
+    padding: 0.125em 0.5em;
+    margin: 0.2em 0.3em;
+    text-align: center;
+    color: white;
+
+    list-style: none;
   }
   .e-navbar:hover {
     /*opacity: 0.8;*/
     border-radius: 0.5em;
     border-width: 0.25em;
     /*border-color: rgba(255, 0, 0, 0.5);*/
-    background-color: #CBCBCB;
+    background-color: #d62700;
     color: white;
     transition: 1s;
-  }
-  .e-navbar a {
-    /*line-height: 2.5em;*/
   }
   </style>
 </head>
 <body>
   <noscript><h1>Bitte aktivieren Sie Javascript, sonst kann sich die Navigationsleiste nicht ausfahren.</h1></noscript>
-  <div id="backgroundImage"></div>
+  <div id="backgroundImage"><h1>Willkommen!</h1></div>
   <ul class="navigationbar">
-    <li class="e-navbar"><a href="#" title="xxx">Text1</a></li>
-    <li class="e-navbar"><a href="#" title="xxx">Text2</a></li>
-    <li class="e-navbar"><a href="#" title="xxx">Text3</a></li>
+    <li class="e-navbar"><a href="#" title="xxx">Schwerpunkte</a></li>
+    <li class="e-navbar"><a href="#" title="xxx">Schwerpunkte</a></li>
+    <li class="e-navbar"><a href="#" title="xxx">Schwerpunkte</a></li>
+    <li class="e-navbar"><a href="#" title="xxx">Schwerpunkte</a></li>
+    <li class="e-navbar"><a href="#" title="xxx">Schwerpunkte</a></li>
   </ul>
   <main>
     <section class="text">
