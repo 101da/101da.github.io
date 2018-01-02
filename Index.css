@@ -1,9 +1,12 @@
 section {
   margin: 0em 5em;
 }
-.text {
+.main {
   text-align: justify;
   hyphens: auto;
+}
+.main a:visited {
+  
 }
 p::-moz-selection {
   background: grey;
