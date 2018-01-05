@@ -96,11 +96,86 @@
     color: #F2F2F2;
     transition: 1s;
   }
+  #open-button, #close-button {
+    margin: 1em;
+    padding: 0;
+    border: none;
+    font-size: 2em;
+    color: #00B272;
+    background: transparent;
+    cursor: pointer;
+  }
+  #open-button:hover, #close-button:hover {
+    opacity: 0.5;
+  }
+  #open-button {
+    position: fixed;
+    right: 0em;
+    top: 0em;
+    z-index: 100;
+    text-align: right;
+  }
+  /*inside menuslider*/
+  #close-button {
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    z-index: 150;
+    text-align: center;
+  }
+  #menuslider {
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: all 0.5s cubic-bezier(.14,.54,1,.31);
+    z-index: 150;
+    width: 100%; /*fährt aus!! > normal 0em*/
+    height: 100%;
+    padding-top: 5em;
+    margin: 0em;
+    background-color: rgba(255, 47, 0, 0.8);
+  }
+  .item-list {
+    list-style-type: none;
+    margin-right: 1em;
+    color: white;
+    display: inline-block;
+  }
+  .e-menuslider {
+    padding: 0.125em 0.5em;
+    margin: 0.2em 0.3em;
+    letter-spacing: 0.2em;
+  }
+  .e-menuslider span {
+    margin-left: 1em;
+  }
+  .e-menuslider:hover {
+    border-radius: 0.5em;
+    border-width: 0.25em;
+    background-color: #d62700;
+    color: #F2F2F2;
+    transition: 1s;
+  }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="Index.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </head>
 <body>
   <noscript><h1>Bitte aktivieren Sie Javascript, sonst kann sich die Navigationsleiste nicht ausfahren.</h1></noscript>
   <div id="backgroundImage"><h1>Willkommen!</h1></div>
+  <button id="open-button" class="fa fa-fw fa-bars" onclick="openNav()" title="Hier gehts zum Menü!"></button>
+  <section id="menuslider">
+    <button id="close-button" class="fa fa-fw fa-times" onclick="closeNav()"></button>
+    <ul class="item-list">
+      <li class="e-menuslider"><a href="#" title="xxx"><i class="fas fa-camera-retro"></i><span>Schwerpunkte</span></a></li>
+      <li class="e-menuslider"><a href="#" title="xxx"><i class="fas fa-camera-retro"></i><span>Schwerpunkte</span></a></li>
+      <li class="e-menuslider"><a href="#" title="xxx"><i class="fas fa-camera-retro"></i><span>Schwerpunkte</span></a></li>
+      <li class="e-menuslider"><a href="#" title="xxx"><i class="fas fa-camera-retro"></i><span>Schwerpunkte</span></a></li>
+      <li class="e-menuslider"><a href="#" title="xxx"><i class="fas fa-camera-retro"></i><span>Schwerpunkte</span></a></li>
+    </ul>
+  </section>
   <ul class="navigationbar">
     <li class="e-navbar"><a href="#" title="xxx">Schwerpunkte</a></li>
     <li class="e-navbar"><a href="#" title="xxx">Schwerpunkte</a></li>
@@ -118,6 +193,16 @@
       <p>An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud. I have a 10 year old son. He has words. He is so good with these words it's unbelievable. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?!I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? My placeholder text, I think, is going to end up being very good with women. I’m the best thing that ever happened to placeholder text. That other text? Sadly, it’s no longer a 10. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. An 'extremely credible source' has called my office and told me that Lorem Ipsum's birth certificate is a fraud. I’m the best thing that ever happened to placeholder text. Despite the constant negative ipsum covfefe. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. Despite the constant negative ipsum covfefe. You’re disgusting. I’m the best thing that ever happened to placeholder text. Lorem Ipsum's father was with Lee Harvey Oswald prior to Oswald's being, you know, shot. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. I think my strongest asset maybe by far is my temperament. I have a placeholding temperament. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. When other websites give you text, they’re not sending the best. They’re not sending you, they’re sending words that have lots of problems and they’re bringing those problems with us. They’re bringing mistakes. They’re bringing misspellings. They’re typists… And some, I assume, are good words. It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again. I think the only difference between me and the other placeholder text is that I’m more honest and my words are more beautiful. Look at these words. Are they small words? And he referred to my words - if they're small, something else must be small. I guarantee you there's no problem, I guarantee.
       </p>
     </section>
+    <section>
+      <h1>important</h1>
+      <p>An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud. I have a 10 year old son. He has words. He is so good with these words it's unbelievable. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?!I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? My placeholder text, I think, is going to end up being very good with women. I’m the best thing that ever happened to placeholder text. That other text? Sadly, it’s no longer a 10. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. An 'extremely credible source' has called my office and told me that Lorem Ipsum's birth certificate is a fraud. I’m the best thing that ever happened to placeholder text. Despite the constant negative ipsum covfefe. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. Despite the constant negative ipsum covfefe. You’re disgusting. I’m the best thing that ever happened to placeholder text. Lorem Ipsum's father was with Lee Harvey Oswald prior to Oswald's being, you know, shot. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. I think my strongest asset maybe by far is my temperament. I have a placeholding temperament. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. When other websites give you text, they’re not sending the best. They’re not sending you, they’re sending words that have lots of problems and they’re bringing those problems with us. They’re bringing mistakes. They’re bringing misspellings. They’re typists… And some, I assume, are good words. It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again. I think the only difference between me and the other placeholder text is that I’m more honest and my words are more beautiful. Look at these words. Are they small words? And he referred to my words - if they're small, something else must be small. I guarantee you there's no problem, I guarantee.
+      </p>
+    </section>
+    <section>
+      <h1>important</h1>
+      <p>An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud. I have a 10 year old son. He has words. He is so good with these words it's unbelievable. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?!I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? My placeholder text, I think, is going to end up being very good with women. I’m the best thing that ever happened to placeholder text. That other text? Sadly, it’s no longer a 10. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. An 'extremely credible source' has called my office and told me that Lorem Ipsum's birth certificate is a fraud. I’m the best thing that ever happened to placeholder text. Despite the constant negative ipsum covfefe. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. Despite the constant negative ipsum covfefe. You’re disgusting. I’m the best thing that ever happened to placeholder text. Lorem Ipsum's father was with Lee Harvey Oswald prior to Oswald's being, you know, shot. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. I think my strongest asset maybe by far is my temperament. I have a placeholding temperament. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. When other websites give you text, they’re not sending the best. They’re not sending you, they’re sending words that have lots of problems and they’re bringing those problems with us. They’re bringing mistakes. They’re bringing misspellings. They’re typists… And some, I assume, are good words. It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again. I think the only difference between me and the other placeholder text is that I’m more honest and my words are more beautiful. Look at these words. Are they small words? And he referred to my words - if they're small, something else must be small. I guarantee you there's no problem, I guarantee.
+      </p>
+    </section>
   </main>
   <footer>
     <a href="#" title="test"><span>Test</span></a>
@@ -125,6 +210,4 @@
   </footer>
 </body>
 </html>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto+Condensed" rel="stylesheet">
-<link rel="stylesheet" href="Index.css">
 <script type="text/Javascript" src="Index.js"></script>
