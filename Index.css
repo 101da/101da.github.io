@@ -1,0 +1,14 @@
+section {
+  margin: 0em 5em;
+}
+main {
+  text-align: justify;
+  hyphens: auto;
+}
+main a:visited {
+
+}
+p::-moz-selection {
+  background: grey;
+  color: white;
+}
