@@ -1,11 +1,8 @@
-var stateSlider = document.getElementById("menuslider").style.display === "none";
-console.log(stateSlider);
-
 function toggleNav() {
-  if (stateSlider == "visible") {
+  if (document.getElementById("menuslider").style.display == "none") {
     document.getElementById("menuslider").style.display ="block";
-  } else if (stateSlider == "none") {
+  } else if (document.getElementById("menuslider").style.display == "block") {
     document.getElementById("menuslider").style.display ="none";
   } else {
-    console.log("Error slider didn't work!")
+    console.log("Error slider didn't work!");
   }};

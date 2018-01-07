@@ -88,10 +88,8 @@
     list-style: none;
   }
   .e-navbar:hover {
-    /*opacity: 0.8;*/
     border-radius: 0.5em;
     border-width: 0.25em;
-    /*border-color: rgba(255, 0, 0, 0.5);*/
     background-color: #d62700;
     color: #F2F2F2;
     transition: 1s;
@@ -114,14 +112,13 @@
   #menuslider-button:hover {
     opacity: 0.5;
   }
-  #menuslider {
+  #menuslider /*wird sichtbar mittels js*/ {
     position: fixed;
     top: 0;
     right: 0;
     overflow-x: hidden;
     transition: all 0.5s cubic-bezier(.14,.54,1,.31);
     z-index: 100;
-    display: block; /*wird sichtbar mittels js*/
     width: 100%;
     height: 100%;
     padding-top: 5em;
@@ -149,6 +146,15 @@
     color: #F2F2F2;
     transition: 1s;
   }
+  @media screen and (max-width: 1500px) {
+    #menuslider-button {display: block}
+    .navigationbar {display: none}
+    #backgroundImage {height: 100%}
+  }
+  @media screen and (min-width: 1501px) {
+    #menuslider-button {display: none}
+    .navigationbar {display: flex}
+  }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="Index.css">
@@ -158,7 +164,7 @@
   <noscript><h1>Bitte aktivieren Sie Javascript, sonst kann sich die Navigationsleiste nicht ausfahren.</h1></noscript>
   <div id="backgroundImage"><h1>Willkommen!</h1></div>
   <button id="menuslider-button" class="fa fa-fw fa-bars" onclick="toggleNav()" title="Hier gehts zum Menü!"></button>
-  <section id="menuslider">
+  <section id="menuslider" style="display:none">
     <ul class="item-list">
       <li class="e-menuslider"><a href="#" title="xxx"><i class="fas fa-camera-retro"></i><span>Schwerpunkte</span></a></li>
       <li class="e-menuslider"><a href="#" title="xxx"><i class="fas fa-camera-retro"></i><span>Schwerpunkte</span></a></li>
